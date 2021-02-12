@@ -6,11 +6,12 @@
     <style>
         body {
             background-color: #d5d6b6;
+            grid-template-columns: 175px 800px;
         }
 
         header {
             padding: 0px 20px;
-            left: 0;
+            float: left;
         }
 
         a {
@@ -19,7 +20,7 @@
 
         li {
             line-height: 50px;
-            width: 100px;
+            max-width: 175px;
             font-size: 24px;
             border-style: solid;
             border-color: black;
@@ -27,6 +28,13 @@
             background-color:#b8de83;
             list-style: none;
             padding: 10px;
+            width: 100%;
+        }
+
+        ul {
+            padding: 0;
+            max-width: 175px;
+            width; 100%;
         }
 
         #form {
@@ -54,6 +62,11 @@
             height: 30px;
         }
 
+        #nav-bar {
+            max-width: 175px;
+            width; 100%;
+        }
+
     </style>
 </head>
 <body>
@@ -71,17 +84,19 @@
             </nav>
         </div>
     </header>
-    <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
-        <p>Sign Up for our Newsletter!</p>
-        <label>
-            <input id="email" name="email" type="email" required placeholder="Email">
-        </label>
-        <label>
-            <input id="submit" name="email" type="submit">
-        </label>
-    </form>
-    <section id="video">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/BDliEq_0qeQ"></iframe>
-    </section>
+    <main>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+            <p>Sign Up for our Newsletter!</p>
+            <label>
+                <input id="email" name="email" type="email" required placeholder="Email">
+            </label>
+            <label>
+                <input id="submit" name="email" type="submit">
+            </label>
+        </form>
+        <section id="video">
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/BDliEq_0qeQ"></iframe>
+        </section>
+    </main>
 </body>
 </html>
