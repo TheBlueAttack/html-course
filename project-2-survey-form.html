@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" type="text/css">
+    <title>Survey Form</title>
+    <style>
+        body {
+            text-align: center;
+            margin: auto;
+            max-width: 100%;
+            background: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7), rgba(58, 58, 158, 0.8) );
+            padding: 50px 50px 50px 50px;
+        }
+
+        #container {
+            margin: 0 auto;
+            max-width: 720px;
+        }
+
+        .header {
+            font-family: Open-Sans, Arial, monospace;
+            color: white;
+            font-size: 32px;
+            line-height: 10px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            font-family: Open-Sans, Arial, monospace;
+            text-align: left;
+            border-radius: 2%;
+            background-color: rgba(27, 27, 50, 0.8);
+            padding: 30px;
+            font-size: 1.25rem;
+            color: white;
+            line-height: 30px;
+        }
+
+        .age {
+            width: 50px;
+        }
+
+        label {
+            display: flex;
+            width: 100%;
+        }
+
+        #add-comm-label{
+            margin-top: 20px;
+        }
+
+        .services, .subjects {
+        margin-top: 10px;
+        }
+
+        .form-group > input,
+        .form-group > select {
+            box-sizing: border-box;
+            font-size: 16px;
+            width: 100%;
+            padding: 0.3rem;
+            border-radius: 0.5rem;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            align-items: center;
+            width: 100%;
+        }
+
+        button {
+            background-color:#2bc46b;
+            font-size: 16px;
+            width: 100%;
+            line-height: 30px;
+            color: white;
+            transition: background-color .2s;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        
+        button:hover {
+            background-color: #24b360;
+        }
+
+    </style>
+</head>
+<body>
+  <div id="container">
+        <header class="header" id="title">Sign Up Form</header>
+        <p class="header" id="description">
+            Please sign up for my service
+        </p>
+      <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Name*</label>
+                <input id="name" class="name" type="text" required placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email"> E-mail* </label>
+                <input id="email" class="email" type="email" required placeholder="E-mail">
+            </div>
+
+            <div class="form-group">
+                <label for="age"> Age </label>
+                <input id="age" class="age" type="number" placeholder="Age" min="18" max="99">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender*</label>
+                <select id="gender" class="gender" name="gender" required>
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer-not-to-say">Prefer Not to Say</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="heading">Which Service do you want to sign up for?</p>
+                <label for="service1" class="services">
+                    <input id="service1" value="service1" type="radio" name="services" class="services"> Service 1
+                </label>
+
+                <label for="service2">
+                    <input id="service2" value="service2" type="radio" name="services" class="services"> Service 2
+                </label>
+
+                <label for="service3">
+                    <input id="service3" value="service3" type="radio" name="services" class="services"> Service 3
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p class="heading">What Subjects are you interested in?</p>
+                <label for="maths">
+                    <input id="maths" type="checkbox" value="subjects" class="subjects">Mathematics
+                </label>
+                <label for="english">
+                    <input id="english" type="checkbox" value="subjects" class="subjects">English
+                </label>
+                <label for="biology">
+                    <input id="biology" type="checkbox" value="subjects" class="subjects">Biology
+                </label>
+                <label for="chemistry">
+                    <input id="chemistry" type="checkbox" value="subjects" class="subjects">Chemistry
+                </label>
+                <label for="physics">
+                    <input id="physics" type="checkbox" value="subjects" class="subjects">Physics
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label id="add-comm-label" for="add-comm">Additional Comments</label>
+                <textarea id="add-comm" name="add-comm" rows="4" cols="50" placeholder="Enter you comments here."></textarea>
+            </div>
+            <button id="submit" type="submit">
+                Submit
+            </button>
+    </form>
+  </div>
+</body>
+</html>
