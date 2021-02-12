@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.4;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #navbar {
+            display: flex;
+            position: fixed;
+            justify-content: flex-end;
+            width: 100%;
+            top: 0;
+            font-size: 2.2rem;
+        }
+
+        #welcome-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 32px;
+            background-color: #425cd4;
+        }
+
+        #projects {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 32px;
+            background-color: #1ac99e;
+        }
+
+        #contact {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            font-size: 32px;
+            background-color: #425cd4;
+        }
+
+        p, h1 {
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="welcome-section">
+        <h1>
+            Bethan Linbourn
+        </h1>
+        <p>
+            I develop websites for your needs!
+        </p>
+    </section>
+    <section id="projects">
+        <div class="project-tile">
+            <a href="https://codepen.io/freeCodeCamp/pen/MJjpwO">My Portfolio</a>
+        </div>
+    </section>
+    <section id="contact">
+        <p>
+            I would be delighted to discuss a project with you...<br>
+            I'm looking forward to hearing from you!
+        </p>
+        <p>
+            <a id="git-profile-link" href="https://github.com/TheBlueAttack" target="_blank">GitHub</a>
+        </p>
+        <p>
+            <a id="linked-profile-link" href="https://www.linkedin.com/in/bethan-linbourn-15a89a198/" target="_blank">LinkedIn</a>
+        </p>
+        <p>
+            <a id="email-profile-link" href="mailto:bcl1999@hotmail.co.uk" target="_blank">Email</a>
+        </p>
+    </section>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
